@@ -1,0 +1,13 @@
+:root{
+    --first-color: white;
+    --second-color:pink;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 60px;
+}
