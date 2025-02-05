@@ -1,6 +1,6 @@
 :root{
-    --first-color: white;
-    --second-color:pink;
+    --first-color: orange;
+    --second-color:violet;
 }
 
 *{
@@ -8,6 +8,38 @@
     margin: 0;
     padding: 0;
 }
-img{
-    width: 60px;
+
+
+a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    position: fixed;
+    width: 100%;
+    
+    & .nav_logo{
+        display: flex;
+        align-items: center;
+        column-gap: 8%;
+    }
+    
+    & .nav_logo img{
+        width: 60px;
+    }
+    
+    .nav_menu{
+        display: flex;
+        column-gap: 30px;
+    }
+    & .nav_menu a {
+        transition: 0.3s;
+    }
+    & .nav_menu a:hover{
+        color: var(--second-color);
+    }
 }
